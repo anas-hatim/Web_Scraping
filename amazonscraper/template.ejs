@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Produits Amazon Monitor</title>
+</head>
+<body>
+  <h1>Produits Amazon Monitor</h1>
+  <ul>
+    <% products.forEach(function(product) { %> <!-- Boucle pour chaque produit dans la liste des produits -->
+      <li>
+        <h2><%= product.name %></h2> <!-- Affiche le nom du produit -->
+        <p>Prix: <%= product.price %></p> <!-- Affiche le prix du produit -->
+        <p>Lien: <a href="<%= product.link %>"><%= product.link %></a></p> <!-- Affiche le lien vers la page du produit -->
+        <img src="<%= product.image %>" alt="<%= product.name %>"> <!-- Affiche l'image du produit -->
+      </li>
+    <% }) %> <!-- Fin de la boucle -->
+  </ul>
+</body>
+</html>

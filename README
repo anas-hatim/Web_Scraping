@@ -1,0 +1,49 @@
+###Amazon Scraper
+
+
+Ce projet est un scraper Node.js qui utilise Puppeteer pour extraire des informations sur les produits à partir de la page web Amazon Monitor.
+
+--Prérequis--
+
+Avant de pouvoir exécuter le scraper, assurez-vous d'avoir les éléments suivants installés sur votre machine :
+
+Node.js : Téléchargement
+npm (Node Package Manager) : Généralement installé avec Node.js
+
+
+--Installation--
+Clonez ce dépôt de code source sur votre machine :
+
+
+git clone https://github.com/votre-utilisateur/amazon-scraper.git
+Accédez au répertoire du projet :
+
+cd amazon-scraper
+Installez les dépendances requises à l'aide de npm :
+
+
+npm install
+
+
+
+--Utilisation--
+
+Pour exécuter le scraper, utilisez la commande suivante :
+
+
+node scraper.js
+
+
+Le scraper parcourra la page web Amazon Monitor (https://www.amazon.com/s?k=monitor) et récupérera les informations suivantes pour chaque produit :
+
+Nom
+Prix
+Lien de la page du produit
+Image
+Les informations seront enregistrées dans un fichier HTML de sortie output.html et affichées dans la console.
+
+--Personnalisation--
+
+
+Si vous souhaitez personnaliser le modèle HTML de sortie, modifiez le fichier template.ejs.
+Pour changer l'URL de la page web à scraper, modifiez l'URL dans le fichier scraper.js.
